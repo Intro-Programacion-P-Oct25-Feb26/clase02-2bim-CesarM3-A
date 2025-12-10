@@ -22,6 +22,8 @@ public class Ejemplo04 {
         int[] arreglo1 = {1000, 1, 2, 2000, 300};
         // System.out.println(arreglo1.length);
         // arreglo1[2] = 1000;
+        /* El .length sirve para traer el numero variables que tienen las 
+        posiciones del arreglo */
         for (int i = 0; i < arreglo1.length; i++) {
             System.out.printf("Subíndice o Índice %d, con valor %d\n",
                     i, arreglo1[i]);
