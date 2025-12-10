@@ -25,7 +25,7 @@ public class Ejemplo05 {
         arreglo1[2] = 50;
         arreglo1[3] = 70;
         arreglo1[4] = 90;
-        // Solo se aigna valor hasta la posicion 4
+        // Solo se asigna valor hasta la posicion 4
         System.out.printf("%d\n", arreglo1.length);
         // Se hace uso del ciclo repetitivo for para recorrer el arreglo
         for (int i = 0; i < arreglo1.length; i++) {
