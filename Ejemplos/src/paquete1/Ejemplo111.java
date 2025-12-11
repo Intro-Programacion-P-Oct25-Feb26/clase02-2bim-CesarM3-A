@@ -13,7 +13,7 @@ import java.util.Scanner;
  *
  * @author reroes
  */
-public class Ejemplo11 {
+public class Ejemplo111 {
 
     /**
      * @param args the command line arguments
@@ -30,6 +30,8 @@ public class Ejemplo11 {
 
         double sumaNotas;
         double promedio;
+        double m1;
+        double m2;
 
         String mensajeFinal = ""; // variable que acumula un reporte final
         // Se hace uso del ciclo repetitivo for para recorrer los arreglos
@@ -46,12 +48,15 @@ public class Ejemplo11 {
         }
 
         for (int i = 0; i < promediosMateria1.length; i++) {
-
+            m1 = promediosMateria1[i];
+            m2 = promediosMateria2[i];
             mensajeFinal = String.format("%sEstudiante:%s - promedio final: "
-                    + "%.4f\n",
+                    + "%.2f (m1: %.1f | m2: %.1f)\n",
                     mensajeFinal,
-                    estudiantes[i],
-                    promediosFinales[i]);
+                    estudiantes[i].toLowerCase(),
+                    promediosFinales[i],
+                    m1,
+                    m2);
         }
 
         System.out.printf("%s\n", mensajeFinal);
